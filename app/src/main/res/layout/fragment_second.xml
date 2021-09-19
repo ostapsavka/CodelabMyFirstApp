@@ -8,31 +8,31 @@
     tools:context=".SecondFragment">
 
     <TextView
-        android:id="@+id/textview_random"
+        android:id="@+id/textviewRandom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R"
         android:textColor="@android:color/white"
         android:textSize="72sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintBottom_toTopOf="@id/previousButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.45" />
 
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/previousButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_random" />
+        app:layout_constraintTop_toBottomOf="@id/textviewRandom" />
 
     <TextView
-        android:id="@+id/textview_header"
+        android:id="@+id/textviewHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

@@ -9,17 +9,14 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.firstapp.databinding.FragmentFirstBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
+// NOTE: FirstFragment
 class FirstFragment : Fragment() {
 
+    // NOTE: Private properties
     private var _binding: FragmentFirstBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
+    // NOTE: Lifecycle
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,6 +48,7 @@ class FirstFragment : Fragment() {
         _binding = null
     }
 
+    // NOTE: Private methods
     private fun randomButtonTapped() {
         val showCountTextView = binding.textviewFirst
         val currentCount = showCountTextView.text.toString().toInt()
@@ -59,8 +57,7 @@ class FirstFragment : Fragment() {
     }
 
     private fun toastButtonTapped() {
-        val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
-        myToast.show()
+        Toast.makeText(context, getString(R.string.hello_toast), Toast.LENGTH_SHORT).show()
     }
 
     private fun countMe(view: View) {
